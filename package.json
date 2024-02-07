@@ -4,7 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:headless:laptop:chrome": "npx cypress run --browser chrome --config-file cypresslaptop.env.js",
+    "test:headed:laptop:chrome": "npx cypress run --browser chrome --headed --config-file cypresslaptop.env.js",
+    "test:headless:mobile:chrome": "npx cypress run --browser chrome --config-file cypressmobile.env.js",
+    "test:headed:mobile:chrome": "npx cypress run --browser chrome --headed --config-file cypressmobile.env.js",
+    "test:headless:laptop:electron": "npx cypress run --browser electron --config-file cypresslaptop.env.js",
+    "test:headed:laptop:electron": "npx cypress run --browser electron --headed --config-file cypresslaptop.env.js",
+    "test:headless:mobile:electron": "npx cypress run --browser electron --config-file cypressmobile.env.js",
+    "test:headed:mobile:electron": "npx cypress run --browser electron --headed --config-file cypressmobile.env.js"
   },
   "keywords": [],
   "author": "",
